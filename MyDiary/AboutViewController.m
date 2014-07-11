@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "AppDelegate.h"
 
 @interface AboutViewController ()
 
@@ -87,6 +88,14 @@
         default:
             break;
     }
+}
+
+- (IBAction)convertCurrency:(UIButton *)sender {
+    self.currencyOperation = [ApplicationDelegate.yahooEngine currencyRateFor:@"SGD" inCurrency:@"USD" onCompletion:^(double rate){
+        [[[UIAlertView alloc] initWithTitle:@"Today's Singapore Dollar Rates" message:[NSString stringWithFormat:@"%.2f",rate] delegate:nil cancelButtonTitle:NSLocalizedString(@"Dismiss", @"") otherButtonTitles:nil] show];
+    }onError:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
 }
 
 @end

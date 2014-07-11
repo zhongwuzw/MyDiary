@@ -10,11 +10,15 @@
 
 @interface AboutViewController : UIViewController
 
+@property (strong, nonatomic) MKNetworkOperation *currencyOperation;
 @property (weak, nonatomic) IBOutlet UILabel *qqNumber;
 @property (weak, nonatomic) IBOutlet UILabel *weiBo;
 @property (weak, nonatomic) IBOutlet UIImageView *authorImage;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *authors;
 
 - (IBAction)authorChanged:(id)sender;
+
+- (IBAction)convertCurrency:(UIButton *)sender;
+
 
 @end

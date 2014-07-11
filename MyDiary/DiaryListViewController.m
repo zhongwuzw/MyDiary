@@ -42,9 +42,12 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 //    DetailDiaryViewController *detailDiaryViewController = [[DetailDiaryViewController alloc] init];
 //    detailDiaryViewController.diary = [[Diary alloc] initWithTitle:@"shit" content:@"sdha"];
    // detailDiaryViewController.diary = diary;
-    [self performSegueWithIdentifier:@"DetailDiary" sender:self];
+  //  [self performSegueWithIdentifier:@"DetailDiary" sender:self];
+    DetailDiaryViewController *detailDiaryController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailDiary"];
+    Diary *diary = [[Diary alloc] initWithTitle:@"haha" content:@"zw"];
+    detailDiaryController.diary = diary;
 
-//    [self.navigationController pushViewController:self.detailDiaryController animated:YES];
+    [self.navigationController pushViewController:detailDiaryController animated:YES];
 
 }
 

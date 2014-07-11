@@ -14,6 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.yahooEngine = [[YahooEngine alloc] initWithHostName:@"download.finance.yahoo.com"];
+    [self.yahooEngine useCache];
     return YES;
 }
 							
