@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailDiaryViewController.h"
 #import "CreateDiaryViewController.h"
+#import "XzxmEngine.h"
 #import "ImageStore.h"
 
 @interface DiaryListViewController : UITableViewController
@@ -18,7 +19,10 @@
 @property (nonatomic, strong) UIColor *diaryTitleColor;
 @property (nonatomic, weak) UIView *headerView;
 @property (nonatomic, strong) UIRefreshControl *refresh;
-@property (strong, nonatomic) NSArray *computers;
+@property (strong, nonatomic) NSMutableArray *computers;
+@property (strong, nonatomic) MKNetworkOperation *userListOperation;
+@property (strong, nonatomic) MKNetworkOperation *userProfileOperation;
+@property (strong, nonatomic) NSDictionary *profilePicDic;
 
 -(UIView *) headerView;
 

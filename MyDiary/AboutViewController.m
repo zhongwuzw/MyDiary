@@ -57,7 +57,10 @@
 
 -(void)viewDidDisappear:(BOOL)animated
 {
-    NSLog(@"AboutViewController 已经消失！");
+    if (self.currencyOperation) {
+        [self.currencyOperation cancel];
+        self.currencyOperation = nil;
+    }
     [super viewDidDisappear:animated];
 }
 

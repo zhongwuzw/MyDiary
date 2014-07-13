@@ -11,6 +11,8 @@
 #import "Diary.h"
 #import "DiaryStore.h"
 #import "DiaryListTableViewCell.h"
+#import "AppDelegate.h"
+#import "UserListItem.h"
 
 
 @interface DiaryListViewController ()
@@ -20,6 +22,19 @@
 @implementation DiaryListViewController
 
 static NSString *CellTableIdentifier = @"CellTableIdentifier";
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UserListItem *rowData = self.computers[indexPath.row];
+    self.userProfileOperation = [ApplicationDelegate.xzxmEngine getProfilePic:rowData.profileImage completionHandler:^(UIImage *proImage){
+        
+        NSLog(@"image is %@",proImage);
+        
+        [self.profilePicDic setValue:proImage forKey:rowData.profileImage];
+    }errorHanler:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
+}
 
 -(UIView *)headerView
 {
@@ -57,7 +72,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     if ([segue.identifier isEqualToString:@"DetailDiary"]) {
         // 获取表格中被选择的行
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSInteger row = [indexPath row];
+        
         NSLog(@"详细界面test");
         
         // 获取数组中选中行的Diary对象
@@ -98,12 +113,20 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     // 设置导航栏的标题
     [[self navigationItem] setTitle:@"推荐"];
     
-    self.computers = @[@{@"Name":@"喵星人",@"Color":@"20岁/165cm/大专/北京海淀"},@{@"Name":@"wangxia",@"Color":@"20岁/165cm/大专/湖南益阳"}];
     UITableView *tableView = (id)[self.view viewWithTag:1];
     tableView.rowHeight = 125;
     UINib *nib = [UINib nibWithNibName:@"CustomCell" bundle:nil];
     
     [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
+    
+    self.userListOperation = [ApplicationDelegate.xzxmEngine homePageUserList:@"123" completionHandler:^(NSMutableArray *userListArray){
+        self.computers = userListArray;
+        [self.tableView reloadData];
+        NSLog(@"computer is %@",self.computers);
+        
+    }errorHandler:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
     
     // 创建刷新控件
     self.refresh = [[UIRefreshControl alloc] init];
@@ -127,12 +150,15 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    
     // 从DiaryStore中获取存储的数据
     self.diaries = (NSMutableArray *)[[DiaryStore defaultStore] diaries];
     
     self.diaryTitleColor = [self diaryTitleColorFromPreferenceSpecifiers];
     
     NSLog(@"日记标题的颜色为 %@。",self.diaryTitleColor);
+    
+    [self.profilePicDic init];
     
     [super viewWillAppear:animated];
 }
@@ -212,32 +238,48 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     // Return the number of rows in the section.
    // return self.diaries.count;
     int count = [self.computers count];
-    return count + 1;
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     DiaryListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
-    if([indexPath row] == [self.computers count])
-    {
-        return cell;
-    }
-    NSDictionary *rowData = self.computers[indexPath.row];
+//    if([indexPath row] == [self.computers count])
+//    {
+//        return cell;
+//    }
+    UserListItem *rowData = self.computers[indexPath.row];
+
+    self.userProfileOperation = [ApplicationDelegate.xzxmEngine getProfilePic:rowData.profileImage completionHandler:^(UIImage *proImage){
+        
+        NSLog(@"image is %@",proImage);
+        
+        cell.profileImage.image = proImage;
+       // [self.profilePicDic setValue:proImage forKey:rowData.profileImage];
+    }errorHanler:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 5)];
     view.backgroundColor = [UIColor grayColor];
     [cell.contentView addSubview:view];
+    NSLog(@"%@",rowData);
+    NSLog(@"rowData is %@",rowData.userName);
     
  //   cell.name = rowData[@"Name"];
-    cell.nameValue.text = rowData[@"Name"];
+    cell.nameValue.text = rowData.userName;
     cell.infoImage.image = [UIImage imageNamed:@"chat_time_backgroud"];
     cell.colorValue.backgroundColor = [UIColor clearColor];
-    cell.colorValue.text = rowData[@"Color"];
+    cell.colorValue.text = rowData.school;
    //  [cell.colorValue sizeToFit];
     cell.colorValue.textColor = [UIColor blackColor];
     
-    cell.profileImage.image = [UIImage imageNamed:@"icon"];
+  //  cell.profileImage.image = [UIImage imageNamed:@"icon"];
+    NSLog(@"%@",self.profilePicDic);
+    cell.profileImage.image = [self.profilePicDic valueForKey:rowData.profileImage];
+    
+    NSLog(@"profileImage is %@",cell.profileImage.image);
     cell.vipImage.image = [UIImage imageNamed:@"desktop_notice_realname"];
     
  //   cell.color = rowData[@"Color"];
@@ -318,28 +360,6 @@ viewForFooterInSection:(NSInteger)section
     return footerView;
 }
  */
-
-- (CGFloat) tableView:(UITableView *)tableView
-heightForFooterInSection:(NSInteger)section
-{
-    CGFloat height = 0.0f;
-    if (section == 0)
-    {
-        height = 30.0f;
-    }
-    return height; 
-}
-
-- (NSString *) tableView:(UITableView *)tableView
- titleForFooterInSection:(NSInteger)section
-{
-    NSString *string = nil;
-    if (section == 0)
-    {
-        string = @"日记列表的结尾";
-    }
-    return string;
-}
 
 /*
 // Override to support conditional editing of the table view.

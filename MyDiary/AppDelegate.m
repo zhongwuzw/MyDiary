@@ -16,6 +16,12 @@
     // Override point for customization after application launch.
     self.yahooEngine = [[YahooEngine alloc] initWithHostName:@"download.finance.yahoo.com"];
     [self.yahooEngine useCache];
+    
+    self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost" portNumber:8000 apiPath:nil customHeaderFields:nil];
+    
+//    self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost:8000"];
+    [self.xzxmEngine useCache];
+    
     return YES;
 }
 							

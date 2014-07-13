@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "YahooEngine.h"
+#import "XzxmEngine.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,5 +16,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) YahooEngine *yahooEngine;
+@property (strong, nonatomic) XzxmEngine *xzxmEngine;
 
 @end

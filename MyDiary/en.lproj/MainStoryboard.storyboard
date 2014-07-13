@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="TYg-76-JA3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="TYg-76-JA3">
     <dependencies>
         <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--About View Controller - 关于作者-->
+        <!--关于作者-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="AboutViewController" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="160" y="276"/>
         </scene>
-        <!--Scroll View Controller - 滚动视图-->
+        <!--滚动视图-->
         <scene sceneID="fVD-ye-2Or">
             <objects>
                 <viewController id="bRV-K0-HFe" customClass="ScrollViewController" sceneMemberID="viewController">
@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="568" y="276"/>
         </scene>
-        <!--Rotation View Controller - 旋转视图-->
+        <!--旋转视图-->
         <scene sceneID="l4q-Hx-VTK">
             <objects>
                 <viewController id="G75-gV-kVv" customClass="RotationViewController" sceneMemberID="viewController">
@@ -277,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="1012" y="564"/>
         </scene>
-        <!--Touch Recognizer View Controller - 手势识别-->
+        <!--手势识别-->
         <scene sceneID="Dys-eo-PLN">
             <objects>
                 <viewController id="HGe-jc-ial" customClass="TouchRecognizerViewController" sceneMemberID="viewController">
@@ -312,7 +312,7 @@
             </objects>
             <point key="canvasLocation" x="1387" y="276"/>
         </scene>
-        <!--Location View Controller - 我的位置-->
+        <!--我的位置-->
         <scene sceneID="lm6-D6-plX">
             <objects>
                 <viewController id="hPO-Vo-dE8" customClass="LocationViewController" sceneMemberID="viewController">
@@ -327,7 +327,7 @@
             </objects>
             <point key="canvasLocation" x="160" y="-348"/>
         </scene>
-        <!--Diary List View Controller - 我的日记-->
+        <!--我的日记-->
         <scene sceneID="GP2-mr-ey4">
             <objects>
                 <viewController id="13f-V9-cPV" customClass="DiaryListViewController" sceneMemberID="viewController">
@@ -624,7 +624,7 @@
             </objects>
             <point key="canvasLocation" x="1517" y="-935"/>
         </scene>
-        <!--Navigation Controller - 我的日记-->
+        <!--我的日记-->
         <scene sceneID="LsK-ab-Ngq">
             <objects>
                 <navigationController definesPresentationContext="YES" id="RqM-BK-mHv" sceneMemberID="viewController">
@@ -686,6 +686,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

@@ -16,8 +16,11 @@
 {
     MKNetworkOperation *op = [self operationWithPath:YAHOO_URL(sourceCurrency, targetCurrency) params:nil httpMethod:@"GET"];
     
+    
     [op addCompletionHandler:^(MKNetworkOperation *completedOperation){
-        NSString *valurString = [[completedOperation responseString] componentsSeparatedByString:@","][1];
+        NSString *valurString = [[completedOperation responseString]
+                                 componentsSeparatedByString:@","][1];
+        
         DLog(@"%@",valurString);
         
         if ([completedOperation isCachedResponse]) {

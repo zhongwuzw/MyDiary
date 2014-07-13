@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01201EF7196FC0C300224EAE /* YahooEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 01201EF6196FC0C300224EAE /* YahooEngine.m */; };
+		01201EFD1971790D00224EAE /* XzxmEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 01201EFC1971790D00224EAE /* XzxmEngine.m */; };
 		012ABFCE196A9CA5005E1121 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012ABFCD196A9CA5005E1121 /* statedictionary.plist */; };
 		012ABFD1196AC18C005E1121 /* DiaryListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 012ABFD0196AC18B005E1121 /* DiaryListTableViewCell.m */; };
 		012ABFD3196AC929005E1121 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012ABFD2196AC929005E1121 /* CustomCell.xib */; };
+		01349CA11972623600B87C97 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01349CA01972623600B87C97 /* JSONModel.m */; };
+		01349CA4197266BA00B87C97 /* UserListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01349CA3197266BA00B87C97 /* UserListItem.m */; };
 		014D3825196D1F3B006B7FCC /* chat_time_backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */; };
 		014D3827196D2ED2006B7FCC /* desktop_notice_realname.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */; };
 		018A9625196C3C2800BF5D01 /* CustomContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018A9624196C3C2800BF5D01 /* CustomContainerViewController.m */; };
@@ -86,10 +89,16 @@
 /* Begin PBXFileReference section */
 		01201EF5196FC0C300224EAE /* YahooEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooEngine.h; sourceTree = "<group>"; };
 		01201EF6196FC0C300224EAE /* YahooEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooEngine.m; sourceTree = "<group>"; };
+		01201EFB1971790D00224EAE /* XzxmEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XzxmEngine.h; sourceTree = "<group>"; };
+		01201EFC1971790D00224EAE /* XzxmEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XzxmEngine.m; sourceTree = "<group>"; };
 		012ABFCD196A9CA5005E1121 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		012ABFCF196AC18B005E1121 /* DiaryListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryListTableViewCell.h; sourceTree = "<group>"; };
 		012ABFD0196AC18B005E1121 /* DiaryListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryListTableViewCell.m; sourceTree = "<group>"; };
 		012ABFD2196AC929005E1121 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		01349C9F1972623600B87C97 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		01349CA01972623600B87C97 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		01349CA2197266BA00B87C97 /* UserListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListItem.h; sourceTree = "<group>"; };
+		01349CA3197266BA00B87C97 /* UserListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListItem.m; sourceTree = "<group>"; };
 		014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_time_backgroud.png; sourceTree = "<group>"; };
 		014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop_notice_realname.png; sourceTree = "<group>"; };
 		018A9623196C3C2800BF5D01 /* CustomContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomContainerViewController.h; sourceTree = "<group>"; };
@@ -356,6 +365,12 @@
 				018A9623196C3C2800BF5D01 /* CustomContainerViewController.h */,
 				018A9624196C3C2800BF5D01 /* CustomContainerViewController.m */,
 				01201EF5196FC0C300224EAE /* YahooEngine.h */,
+				01201EFB1971790D00224EAE /* XzxmEngine.h */,
+				01201EFC1971790D00224EAE /* XzxmEngine.m */,
+				01349C9F1972623600B87C97 /* JSONModel.h */,
+				01349CA01972623600B87C97 /* JSONModel.m */,
+				01349CA2197266BA00B87C97 /* UserListItem.h */,
+				01349CA3197266BA00B87C97 /* UserListItem.m */,
 				01201EF6196FC0C300224EAE /* YahooEngine.m */,
 				1FCFF7451653C37200821345 /* DiaryListViewController.h */,
 				1FCFF7461653C37200821345 /* DiaryListViewController.m */,
@@ -585,6 +600,7 @@
 				1FAB1DAC165790A20087D133 /* ImageStore.m in Sources */,
 				1FD4C8161657D651007FE914 /* DiaryStore.m in Sources */,
 				1FAD9F1F1659113800379E7B /* RecordViewController.m in Sources */,
+				01201EFD1971790D00224EAE /* XzxmEngine.m in Sources */,
 				01ED0CFC196EE2AE00D652B6 /* Reachability.m in Sources */,
 				1F8C1A69166831D700B2063D /* ScrollViewController.m in Sources */,
 				01ED0CF6196EE2AE00D652B6 /* NSDictionary+RequestEncoding.m in Sources */,
@@ -602,6 +618,8 @@
 				1FF0F9CD167F766000AED782 /* SwipeView.m in Sources */,
 				1FF0F9D0167F77DD00AED782 /* RotationView.m in Sources */,
 				1FF0F9D3167F793100AED782 /* LongPressView.m in Sources */,
+				01349CA11972623600B87C97 /* JSONModel.m in Sources */,
+				01349CA4197266BA00B87C97 /* UserListItem.m in Sources */,
 				01201EF7196FC0C300224EAE /* YahooEngine.m in Sources */,
 				1FF0F9D7167F7BFB00AED782 /* PinchView.m in Sources */,
 			);
