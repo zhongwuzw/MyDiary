@@ -23,19 +23,6 @@
 
 static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UserListItem *rowData = self.computers[indexPath.row];
-    self.userProfileOperation = [ApplicationDelegate.xzxmEngine getProfilePic:rowData.profileImage completionHandler:^(UIImage *proImage){
-        
-        NSLog(@"image is %@",proImage);
-        
-        [self.profilePicDic setValue:proImage forKey:rowData.profileImage];
-    }errorHanler:^(NSError *error){
-        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
-    }];
-}
-
 -(UIView *)headerView
 {
     //如果还没有载入headerView的话...
@@ -274,12 +261,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     cell.colorValue.text = rowData.school;
    //  [cell.colorValue sizeToFit];
     cell.colorValue.textColor = [UIColor blackColor];
-    
-  //  cell.profileImage.image = [UIImage imageNamed:@"icon"];
-    NSLog(@"%@",self.profilePicDic);
-    cell.profileImage.image = [self.profilePicDic valueForKey:rowData.profileImage];
-    
-    NSLog(@"profileImage is %@",cell.profileImage.image);
+
     cell.vipImage.image = [UIImage imageNamed:@"desktop_notice_realname"];
     
  //   cell.color = rowData[@"Color"];
