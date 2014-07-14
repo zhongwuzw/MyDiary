@@ -20,10 +20,14 @@
 @property (nonatomic, weak) UIView *headerView;
 @property (nonatomic, strong) UIRefreshControl *refresh;
 @property (strong, nonatomic) NSMutableArray *computers;
-@property (strong, nonatomic) MKNetworkOperation *userListOperation;
-@property (strong, nonatomic) MKNetworkOperation *userProfileOperation;
 @property (strong, nonatomic) NSDictionary *profilePicDic;
 
--(UIView *) headerView;
+@property (strong, nonatomic) MKNetworkOperation *userListOperation;
+@property (strong, nonatomic) MKNetworkOperation *userProfileOperation;
+@property (strong, nonatomic) MKNetworkOperation *pullUpUserListOperation;
+@property (strong, nonatomic) MKNetworkOperation *pullDownUserListOperation;
+
+- (UIView *) headerView;
+- (void)footerRefreshing;
 
 @end

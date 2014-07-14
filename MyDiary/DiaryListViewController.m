@@ -13,6 +13,7 @@
 #import "DiaryListTableViewCell.h"
 #import "AppDelegate.h"
 #import "UserListItem.h"
+#import "MJRefresh.h"
 
 
 @interface DiaryListViewController ()
@@ -22,6 +23,19 @@
 @implementation DiaryListViewController
 
 static NSString *CellTableIdentifier = @"CellTableIdentifier";
+
+- (void)footerRefreshing
+{
+    self.pullUpUserListOperation = [ApplicationDelegate.xzxmEngine homePageUserList:@"123" completionHandler:^(NSMutableArray *userListArray){
+        self.computers = userListArray;
+        [self.tableView reloadData];
+        [self.tableView footerEndRefreshing];
+        NSLog(@"computer is %@",self.computers);
+        
+    }errorHandler:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
+}
 
 -(UIView *)headerView
 {
@@ -106,6 +120,8 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
     
+    [self.tableView addFooterWithTarget:self action:@selector(footerRefreshing)];
+    
     self.userListOperation = [ApplicationDelegate.xzxmEngine homePageUserList:@"123" completionHandler:^(NSMutableArray *userListArray){
         self.computers = userListArray;
         [self.tableView reloadData];
@@ -126,13 +142,22 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
 -(void)handleRefresh:(id)sender
 {
-    if (self.refresh.refreshing) {
-        NSLog(@"表格视图正在刷新中……");
-        self.refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"刷新中"];
-    }
     
-    [self.refresh endRefreshing];
-    [self.tableView reloadData];
+    if (self.refresh.refreshing) {
+        self.refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"刷新中"];
+        
+        self.pullDownUserListOperation = [ApplicationDelegate.xzxmEngine homePageUserList:@"123" completionHandler:^(NSMutableArray *userListArray){
+            
+            self.computers = userListArray;
+            
+            [self.refresh endRefreshing];
+            [self.tableView reloadData];
+        //    NSLog(@"computer is %@",self.computers);
+            
+        }errorHandler:^(NSError *error){
+            DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+        }];
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated
