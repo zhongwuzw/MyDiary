@@ -13,8 +13,8 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eha-tW-Y5b" id="gh4-c1-eNu">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyg-Yu-BMl">
-                        <rect key="frame" x="124" y="34" width="224" height="22"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jyg-Yu-BMl">
+                        <rect key="frame" x="113" y="36" width="163" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -27,24 +27,43 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-nZ-di7">
                         <rect key="frame" x="6" y="19" width="64" height="64"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbH-Xu-Wlr">
-                        <rect key="frame" x="113" y="34" width="163" height="21"/>
-                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Yq-YHZ">
                         <rect key="frame" x="234" y="7" width="19" height="19"/>
                     </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-pv-MKc">
+                        <rect key="frame" x="113" y="64" width="187" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ju0-7R-2DP">
+                        <rect key="frame" x="289" y="104" width="17" height="16"/>
+                        <state key="normal" title="Button" image="activity_chat_discuss_icon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-FW-dms">
+                        <rect key="frame" x="256" y="104" width="20" height="17"/>
+                        <state key="normal" title="Button" image="activity_chat_ding_icon.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="colorValue" destination="Jyg-Yu-BMl" id="VFJ-kR-BK7"/>
-                <outlet property="infoImage" destination="rbH-Xu-Wlr" id="6Ap-q9-Ili"/>
+                <outlet property="introduce" destination="lbh-pv-MKc" id="8xe-g8-q6n"/>
                 <outlet property="nameValue" destination="dV4-86-N3i" id="kea-tw-k0d"/>
                 <outlet property="profileImage" destination="V3V-nZ-di7" id="tL7-jY-uPv"/>
                 <outlet property="vipImage" destination="Wq5-Yq-YHZ" id="41z-Db-XW5"/>
             </connections>
-            <point key="canvasLocation" x="251" y="217.5"/>
+            <point key="canvasLocation" x="251" y="211.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="activity_chat_ding_icon.png" width="20" height="17"/>
+        <image name="activity_chat_discuss_icon.png" width="17" height="16"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

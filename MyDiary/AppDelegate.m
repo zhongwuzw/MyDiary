@@ -19,8 +19,7 @@
     
     self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost" portNumber:8000 apiPath:nil customHeaderFields:nil];
     
-//    self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost:8000"];
-    [self.xzxmEngine useCache];
+   // [self.xzxmEngine useCache];
     
     return YES;
 }

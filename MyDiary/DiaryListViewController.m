@@ -30,7 +30,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
         self.computers = userListArray;
         [self.tableView reloadData];
         [self.tableView footerEndRefreshing];
-        NSLog(@"computer is %@",self.computers);
         
     }errorHandler:^(NSError *error){
         DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
@@ -69,12 +68,9 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"segie的值是%@",segue.identifier);
     if ([segue.identifier isEqualToString:@"DetailDiary"]) {
         // 获取表格中被选择的行
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
-        NSLog(@"详细界面test");
         
         // 获取数组中选中行的Diary对象
     //    Diary *diary = [self.diaries objectAtIndex:row];
@@ -91,9 +87,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
         // 设置createDiaryViewController对象的delegate属性
         createDiaryViewController.delegate = self;
     }
-    else {
-        NSLog(@"详细界面test");
-    }
+
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -125,7 +119,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     self.userListOperation = [ApplicationDelegate.xzxmEngine homePageUserList:@"123" completionHandler:^(NSMutableArray *userListArray){
         self.computers = userListArray;
         [self.tableView reloadData];
-        NSLog(@"computer is %@",self.computers);
         
     }errorHandler:^(NSError *error){
         DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
@@ -167,10 +160,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     self.diaries = (NSMutableArray *)[[DiaryStore defaultStore] diaries];
     
     self.diaryTitleColor = [self diaryTitleColorFromPreferenceSpecifiers];
-    
-    NSLog(@"日记标题的颜色为 %@。",self.diaryTitleColor);
-    
-    [self.profilePicDic init];
     
     [super viewWillAppear:animated];
 }
@@ -214,7 +203,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     if (cell != nil) {
         NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
-        NSLog(@"单元格 %@ 的附件指示器按钮被点击。", cellIndexPath);
+    
     }
     
     /* 获取了用户点击的哪行单元格的指示器以后，可以播放该日记的音频信息。 */
@@ -230,7 +219,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
                 didSaveWithDiary:(Diary *)theDiary
 {
     Diary *diary = theDiary;
-    NSLog(@"title:%@, content:%@",diary.title, diary.content);
     
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.diaries addObject:diary];
@@ -265,8 +253,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
     self.userProfileOperation = [ApplicationDelegate.xzxmEngine getProfilePic:rowData.profileImage completionHandler:^(UIImage *proImage){
         
-        NSLog(@"image is %@",proImage);
-        
         cell.profileImage.image = proImage;
        // [self.profilePicDic setValue:proImage forKey:rowData.profileImage];
     }errorHanler:^(NSError *error){
@@ -276,16 +262,20 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 5)];
     view.backgroundColor = [UIColor grayColor];
     [cell.contentView addSubview:view];
-    NSLog(@"%@",rowData);
-    NSLog(@"rowData is %@",rowData.userName);
     
  //   cell.name = rowData[@"Name"];
     cell.nameValue.text = rowData.userName;
-    cell.infoImage.image = [UIImage imageNamed:@"chat_time_backgroud"];
-    cell.colorValue.backgroundColor = [UIColor clearColor];
-    cell.colorValue.text = rowData.school;
-   //  [cell.colorValue sizeToFit];
-    cell.colorValue.textColor = [UIColor blackColor];
+  //  cell.infoImage.image = [UIImage imageNamed:@"chat_time_backgroud"];
+    cell.colorValue.backgroundColor = [UIColor grayColor];
+    NSString *finalValue = [[NSString alloc] initWithFormat:@"%@岁/%@cm/%@",rowData.age,rowData.height,rowData.school];
+    cell.colorValue.text = finalValue;
+    cell.colorValue.layer.cornerRadius = 10;
+    
+    cell.introduce.numberOfLines = 2;
+    cell.introduce.text = @"关于我，每天清晨起来，看到你和阳光同在，这就是我想要的生活";
+//    cell.colorValue.text = rowData.school;
+
+    cell.colorValue.textColor = [UIColor whiteColor];
 
     cell.vipImage.image = [UIImage imageNamed:@"desktop_notice_realname"];
     
@@ -324,11 +314,9 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 -(void)tableView:(UITableView *)tableView
 accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"单元格 %@ 的附件指示器按钮被点击。", indexPath);
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    NSLog(@"单元格的标题为：%@", cell.textLabel.text);
 }
 
 //- (UIView *)tableView:(UITableView *)tableView

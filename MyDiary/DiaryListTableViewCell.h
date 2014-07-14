@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameValue;
 @property (weak, nonatomic) IBOutlet UILabel *colorValue;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
-@property (weak, nonatomic) IBOutlet UIImageView *infoImage;
 @property (weak, nonatomic) IBOutlet UIImageView *vipImage;
+@property (weak, nonatomic) IBOutlet UILabel *introduce;
 
 @end

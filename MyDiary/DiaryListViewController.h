@@ -20,7 +20,6 @@
 @property (nonatomic, weak) UIView *headerView;
 @property (nonatomic, strong) UIRefreshControl *refresh;
 @property (strong, nonatomic) NSMutableArray *computers;
-@property (strong, nonatomic) NSDictionary *profilePicDic;
 
 @property (strong, nonatomic) MKNetworkOperation *userListOperation;
 @property (strong, nonatomic) MKNetworkOperation *userProfileOperation;

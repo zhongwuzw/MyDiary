@@ -14,5 +14,7 @@
 @property (nonatomic, strong)NSString *school;
 @property (nonatomic, strong)NSString *education;
 @property (nonatomic, strong)NSString *profileImage;
+@property (nonatomic, strong)NSString *age;
+@property (nonatomic, strong)NSString *height;
 
 @end
