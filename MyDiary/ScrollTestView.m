@@ -48,30 +48,7 @@
 - (void)configAdvent:(NSArray *)imgArray
 {
     [self adImg:imageArray];
-    [self setCurrentPage:_pageControl.currentPage];
     
-}
-
-- (void)setCurrentPage:(NSInteger)secondPage
-{
-    for (NSUInteger subviewIndex = 0; subviewIndex < [_pageControl.subviews count]; subviewIndex++) {
-        UIImageView *subView = [_pageControl.subviews objectAtIndex:subviewIndex];
-        if ([subView isKindOfClass:[UIImageView class]]) {
-            CGSize size;
-            size.height = 8;
-            size.width = 8;
-            [subView setFrame:CGRectMake(subView.frame.origin.x, subView.frame.origin.y, size.width, size.height)];
-            
-            if (subviewIndex == secondPage) {
-                [subView setImage:[UIImage imageNamed:@"mtll_adt_lately_share_page_no_cur"]];
-            }
-            else
-            {
-                [subView setImage:[UIImage imageNamed:@"mtll_adt_lately_share_page_no_cur"]];
-            }
-            
-        }
-    }
 }
 
 - (void)adImg:(NSArray *)arr
@@ -84,14 +61,20 @@
         UIButton *img = [[UIButton alloc] initWithFrame:CGRectMake(320*i, 0, 320, 80)];
         [_sv addSubview:img];
         [img setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        [img addTarget:self action:@selector(touchHandler) forControlEvents:UIControlEventTouchUpInside];
     }
+}
+
+- (void)touchHandler
+{
+    NSLog(@"我点击了图片");
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     NSLog(@"我滑动了");
     _pageControl.currentPage = scrollView.contentOffset.x/320;
-    [self setCurrentPage:_pageControl.currentPage];
+
 }
 
 - (void)configUserInterface

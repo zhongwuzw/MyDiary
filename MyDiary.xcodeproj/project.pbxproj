@@ -31,9 +31,6 @@
 		01E0B0EA197376C400105395 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0E2197376C400105395 /* UIView+Extension.m */; };
 		01E0B0EC1973C9FB00105395 /* activity_chat_ding_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0EB1973C9FB00105395 /* activity_chat_ding_icon.png */; };
 		01E0B0EE1973CA0500105395 /* activity_chat_discuss_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0ED1973CA0500105395 /* activity_chat_discuss_icon.png */; };
-		01E0B0F0197420DF00105395 /* headerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0EF197420DE00105395 /* headerTest.xib */; };
-		01E0B0F41974221C00105395 /* headerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0F21974221C00105395 /* headerTableViewCell.m */; };
-		01E0B0F51974221C00105395 /* headerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0F31974221C00105395 /* headerTableViewCell.xib */; };
 		01ED0CF3196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CDE196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m */; };
 		01ED0CF4196EE2AE00D652B6 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CE0196EE2AE00D652B6 /* NSData+MKBase64.m */; };
 		01ED0CF5196EE2AE00D652B6 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CE2196EE2AE00D652B6 /* NSDate+RFC1123.m */; };
@@ -65,7 +62,6 @@
 		1F5BE0DC1647DC0C0004242A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE0DB1647DC0C0004242A /* AppDelegate.m */; };
 		1F5BE0E51647DC0C0004242A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BE0E31647DC0C0004242A /* MainStoryboard.storyboard */; };
 		1F5BE0E81647DC0C0004242A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE0E71647DC0C0004242A /* AboutViewController.m */; };
-		1F5C2B101679395400264E09 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C2B0F1679395400264E09 /* HeaderView.xib */; };
 		1F7AFFA6164895550072EC00 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7AFFA5164895550072EC00 /* icon.png */; };
 		1F7AFFA91648955B0072EC00 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7AFFA81648955B0072EC00 /* icon@2x.png */; };
 		1F7B54B9164D547E00C3A264 /* liuming.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F7B54B5164D547E00C3A264 /* liuming.png */; };
@@ -142,10 +138,6 @@
 		01E0B0E2197376C400105395 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		01E0B0EB1973C9FB00105395 /* activity_chat_ding_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_chat_ding_icon.png; sourceTree = "<group>"; };
 		01E0B0ED1973CA0500105395 /* activity_chat_discuss_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_chat_discuss_icon.png; sourceTree = "<group>"; };
-		01E0B0EF197420DE00105395 /* headerTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerTest.xib; sourceTree = "<group>"; };
-		01E0B0F11974221C00105395 /* headerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headerTableViewCell.h; sourceTree = "<group>"; };
-		01E0B0F21974221C00105395 /* headerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headerTableViewCell.m; sourceTree = "<group>"; };
-		01E0B0F31974221C00105395 /* headerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerTableViewCell.xib; sourceTree = "<group>"; };
 		01ED0CDE196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 		01ED0CDF196EE2AE00D652B6 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
 		01ED0CE0196EE2AE00D652B6 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
@@ -197,7 +189,6 @@
 		1F5BE0E41647DC0C0004242A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1F5BE0E61647DC0C0004242A /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1F5BE0E71647DC0C0004242A /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		1F5C2B0F1679395400264E09 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1F7AFFA5164895550072EC00 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1F7AFFA81648955B0072EC00 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		1F7B54B5164D547E00C3A264 /* liuming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liuming.png; sourceTree = "<group>"; };
@@ -446,15 +437,10 @@
 				1FCFF7451653C37200821345 /* DiaryListViewController.h */,
 				1FCFF7461653C37200821345 /* DiaryListViewController.m */,
 				012ABFCF196AC18B005E1121 /* DiaryListTableViewCell.h */,
-				01E0B0F11974221C00105395 /* headerTableViewCell.h */,
-				01E0B0F21974221C00105395 /* headerTableViewCell.m */,
+				012ABFD0196AC18B005E1121 /* DiaryListTableViewCell.m */,
 				0157E2A11974C91700BA19D1 /* ScrollTestView.h */,
 				0157E2A21974C91700BA19D1 /* ScrollTestView.m */,
-				01E0B0F31974221C00105395 /* headerTableViewCell.xib */,
-				012ABFD0196AC18B005E1121 /* DiaryListTableViewCell.m */,
 				012ABFD2196AC929005E1121 /* CustomCell.xib */,
-				1F5C2B0F1679395400264E09 /* HeaderView.xib */,
-				01E0B0EF197420DE00105395 /* headerTest.xib */,
 				1F0482441653F21F00799871 /* DetailDiaryViewController.h */,
 				1F0482451653F21F00799871 /* DetailDiaryViewController.m */,
 				1F1347D916549E910099545A /* CreateDiaryViewController.h */,
@@ -645,7 +631,6 @@
 				0157E2A61974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png in Resources */,
 				1F2F32C0164DFA5C002646F0 /* about.png in Resources */,
 				1F2F32C1164DFA5C002646F0 /* diary.png in Resources */,
-				01E0B0F0197420DF00105395 /* headerTest.xib in Resources */,
 				1F2F32C2164DFA5C002646F0 /* location.png in Resources */,
 				1FB681A7165288E1008B990F /* AMap.bundle in Resources */,
 				0157E2A71974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png in Resources */,
@@ -656,9 +641,7 @@
 				0157E2AA19750BDD00BA19D1 /* recommond_header_bander_default.png in Resources */,
 				1F986954165B69F7003AE8C7 /* Settings.bundle in Resources */,
 				1F053E9E166BBC980040B05F /* doneInKeyboard.png in Resources */,
-				01E0B0F51974221C00105395 /* headerTableViewCell.xib in Resources */,
 				014D3827196D2ED2006B7FCC /* desktop_notice_realname.png in Resources */,
-				1F5C2B101679395400264E09 /* HeaderView.xib in Resources */,
 				1FF0F9BF167F6FFD00AED782 /* flower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,7 +659,6 @@
 				01ED0CF7196EE2AE00D652B6 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				1F5BE0DC1647DC0C0004242A /* AppDelegate.m in Sources */,
 				01ED0CFA196EE2AE00D652B6 /* MKNetworkEngine.m in Sources */,
-				01E0B0F41974221C00105395 /* headerTableViewCell.m in Sources */,
 				1F5BE0E81647DC0C0004242A /* AboutViewController.m in Sources */,
 				01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */,
 				1FEAD1A6164AAF630067FE33 /* Diary.m in Sources */,
