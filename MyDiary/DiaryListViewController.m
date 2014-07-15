@@ -14,6 +14,7 @@
 #import "AppDelegate.h"
 #import "UserListItem.h"
 #import "MJRefresh.h"
+#import "ScrollTestView.h"
 
 
 @interface DiaryListViewController ()
@@ -41,7 +42,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     //如果还没有载入headerView的话...
     if (!_headerView) {
         //载入HeaderView.xib资源
-        _headerView = (UIView *)[[[NSBundle mainBundle] loadNibNamed:@"HeaderView"
+        _headerView = (UIView *)[[[NSBundle mainBundle] loadNibNamed:@"headerTableViewCell"
                                       owner:self options:nil] objectAtIndex:0];
     }
     return _headerView;
@@ -123,6 +124,10 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     }errorHandler:^(NSError *error){
         DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
     }];
+    
+ //   self.tableView.tableHeaderView = [self headerView];
+    ScrollTestView *scrollTestView = [[ScrollTestView alloc] initWithFrame:CGRectMake(0, 0, 320, 80)];
+    self.tableView.tableHeaderView = scrollTestView;
     
     // 创建刷新控件
     self.refresh = [[UIRefreshControl alloc] init];
@@ -243,7 +248,6 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     DiaryListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
 //    if([indexPath row] == [self.computers count])
 //    {

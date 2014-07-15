@@ -16,6 +16,11 @@
 		01349CA4197266BA00B87C97 /* UserListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01349CA3197266BA00B87C97 /* UserListItem.m */; };
 		014D3825196D1F3B006B7FCC /* chat_time_backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */; };
 		014D3827196D2ED2006B7FCC /* desktop_notice_realname.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */; };
+		0157E2A31974C91700BA19D1 /* ScrollTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157E2A21974C91700BA19D1 /* ScrollTestView.m */; };
+		0157E2A61974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A41974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png */; };
+		0157E2A71974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A51974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png */; };
+		0157E2AA19750BDD00BA19D1 /* recommond_header_bander_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A819750BDD00BA19D1 /* recommond_header_bander_default.png */; };
+		0157E2AB19750BDD00BA19D1 /* recommand_banner_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A919750BDD00BA19D1 /* recommand_banner_default.jpg */; };
 		01E0B0E3197376C400105395 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0D3197376C400105395 /* MJRefresh.bundle */; };
 		01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D6197376C400105395 /* MJRefreshBaseView.m */; };
 		01E0B0E5197376C400105395 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D8197376C400105395 /* MJRefreshConst.m */; };
@@ -26,6 +31,9 @@
 		01E0B0EA197376C400105395 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0E2197376C400105395 /* UIView+Extension.m */; };
 		01E0B0EC1973C9FB00105395 /* activity_chat_ding_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0EB1973C9FB00105395 /* activity_chat_ding_icon.png */; };
 		01E0B0EE1973CA0500105395 /* activity_chat_discuss_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0ED1973CA0500105395 /* activity_chat_discuss_icon.png */; };
+		01E0B0F0197420DF00105395 /* headerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0EF197420DE00105395 /* headerTest.xib */; };
+		01E0B0F41974221C00105395 /* headerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0F21974221C00105395 /* headerTableViewCell.m */; };
+		01E0B0F51974221C00105395 /* headerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0F31974221C00105395 /* headerTableViewCell.xib */; };
 		01ED0CF3196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CDE196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m */; };
 		01ED0CF4196EE2AE00D652B6 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CE0196EE2AE00D652B6 /* NSData+MKBase64.m */; };
 		01ED0CF5196EE2AE00D652B6 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0CE2196EE2AE00D652B6 /* NSDate+RFC1123.m */; };
@@ -110,6 +118,12 @@
 		01349CA3197266BA00B87C97 /* UserListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListItem.m; sourceTree = "<group>"; };
 		014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_time_backgroud.png; sourceTree = "<group>"; };
 		014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop_notice_realname.png; sourceTree = "<group>"; };
+		0157E2A11974C91700BA19D1 /* ScrollTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTestView.h; sourceTree = "<group>"; };
+		0157E2A21974C91700BA19D1 /* ScrollTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTestView.m; sourceTree = "<group>"; };
+		0157E2A41974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mtll_adt_lately_share_page_no_cur.png; sourceTree = "<group>"; };
+		0157E2A51974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mtll_adt_lately_share_page_no_nor.png; sourceTree = "<group>"; };
+		0157E2A819750BDD00BA19D1 /* recommond_header_bander_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommond_header_bander_default.png; sourceTree = "<group>"; };
+		0157E2A919750BDD00BA19D1 /* recommand_banner_default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recommand_banner_default.jpg; sourceTree = "<group>"; };
 		01E0B0D3197376C400105395 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		01E0B0D4197376C400105395 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		01E0B0D5197376C400105395 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -128,6 +142,10 @@
 		01E0B0E2197376C400105395 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		01E0B0EB1973C9FB00105395 /* activity_chat_ding_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_chat_ding_icon.png; sourceTree = "<group>"; };
 		01E0B0ED1973CA0500105395 /* activity_chat_discuss_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_chat_discuss_icon.png; sourceTree = "<group>"; };
+		01E0B0EF197420DE00105395 /* headerTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerTest.xib; sourceTree = "<group>"; };
+		01E0B0F11974221C00105395 /* headerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headerTableViewCell.h; sourceTree = "<group>"; };
+		01E0B0F21974221C00105395 /* headerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headerTableViewCell.m; sourceTree = "<group>"; };
+		01E0B0F31974221C00105395 /* headerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headerTableViewCell.xib; sourceTree = "<group>"; };
 		01ED0CDE196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 		01ED0CDF196EE2AE00D652B6 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
 		01ED0CE0196EE2AE00D652B6 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
@@ -355,8 +373,12 @@
 				1FB6818B16528789008B990F /* include */,
 				1FC40B131649375500A89649 /* Default@2x.png */,
 				1FC40B11164936E500A89649 /* Default-568h@2x.png */,
+				0157E2A41974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png */,
+				0157E2A51974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png */,
 				01E0B0EB1973C9FB00105395 /* activity_chat_ding_icon.png */,
 				01E0B0ED1973CA0500105395 /* activity_chat_discuss_icon.png */,
+				0157E2A819750BDD00BA19D1 /* recommond_header_bander_default.png */,
+				0157E2A919750BDD00BA19D1 /* recommand_banner_default.jpg */,
 				014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */,
 				014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */,
 				1FC40B0B1649368A00A89649 /* Default.png */,
@@ -424,9 +446,15 @@
 				1FCFF7451653C37200821345 /* DiaryListViewController.h */,
 				1FCFF7461653C37200821345 /* DiaryListViewController.m */,
 				012ABFCF196AC18B005E1121 /* DiaryListTableViewCell.h */,
+				01E0B0F11974221C00105395 /* headerTableViewCell.h */,
+				01E0B0F21974221C00105395 /* headerTableViewCell.m */,
+				0157E2A11974C91700BA19D1 /* ScrollTestView.h */,
+				0157E2A21974C91700BA19D1 /* ScrollTestView.m */,
+				01E0B0F31974221C00105395 /* headerTableViewCell.xib */,
 				012ABFD0196AC18B005E1121 /* DiaryListTableViewCell.m */,
 				012ABFD2196AC929005E1121 /* CustomCell.xib */,
 				1F5C2B0F1679395400264E09 /* HeaderView.xib */,
+				01E0B0EF197420DE00105395 /* headerTest.xib */,
 				1F0482441653F21F00799871 /* DetailDiaryViewController.h */,
 				1F0482451653F21F00799871 /* DetailDiaryViewController.m */,
 				1F1347D916549E910099545A /* CreateDiaryViewController.h */,
@@ -608,21 +636,27 @@
 				012ABFCE196A9CA5005E1121 /* statedictionary.plist in Resources */,
 				1FC40B141649375500A89649 /* Default@2x.png in Resources */,
 				01E0B0EE1973CA0500105395 /* activity_chat_discuss_icon.png in Resources */,
+				0157E2AB19750BDD00BA19D1 /* recommand_banner_default.jpg in Resources */,
 				1F7B54B9164D547E00C3A264 /* liuming.png in Resources */,
 				1F7B54BA164D547E00C3A264 /* liuming@2x.png in Resources */,
 				1F7B54BB164D547E00C3A264 /* zhuge.png in Resources */,
 				1F7B54BC164D547E00C3A264 /* zhuge@2x.png in Resources */,
 				012ABFD3196AC929005E1121 /* CustomCell.xib in Resources */,
+				0157E2A61974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png in Resources */,
 				1F2F32C0164DFA5C002646F0 /* about.png in Resources */,
 				1F2F32C1164DFA5C002646F0 /* diary.png in Resources */,
+				01E0B0F0197420DF00105395 /* headerTest.xib in Resources */,
 				1F2F32C2164DFA5C002646F0 /* location.png in Resources */,
 				1FB681A7165288E1008B990F /* AMap.bundle in Resources */,
+				0157E2A71974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png in Resources */,
 				01E0B0EC1973C9FB00105395 /* activity_chat_ding_icon.png in Resources */,
 				014D3825196D1F3B006B7FCC /* chat_time_backgroud.png in Resources */,
 				01E0B0E3197376C400105395 /* MJRefresh.bundle in Resources */,
 				1FB681A916528B6A008B990F /* assets in Resources */,
+				0157E2AA19750BDD00BA19D1 /* recommond_header_bander_default.png in Resources */,
 				1F986954165B69F7003AE8C7 /* Settings.bundle in Resources */,
 				1F053E9E166BBC980040B05F /* doneInKeyboard.png in Resources */,
+				01E0B0F51974221C00105395 /* headerTableViewCell.xib in Resources */,
 				014D3827196D2ED2006B7FCC /* desktop_notice_realname.png in Resources */,
 				1F5C2B101679395400264E09 /* HeaderView.xib in Resources */,
 				1FF0F9BF167F6FFD00AED782 /* flower.png in Resources */,
@@ -642,6 +676,7 @@
 				01ED0CF7196EE2AE00D652B6 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				1F5BE0DC1647DC0C0004242A /* AppDelegate.m in Sources */,
 				01ED0CFA196EE2AE00D652B6 /* MKNetworkEngine.m in Sources */,
+				01E0B0F41974221C00105395 /* headerTableViewCell.m in Sources */,
 				1F5BE0E81647DC0C0004242A /* AboutViewController.m in Sources */,
 				01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */,
 				1FEAD1A6164AAF630067FE33 /* Diary.m in Sources */,
@@ -670,6 +705,7 @@
 				1FF0F9CA167F72F200AED782 /* PanView.m in Sources */,
 				01E0B0E7197376C400105395 /* MJRefreshHeaderView.m in Sources */,
 				01ED0CF4196EE2AE00D652B6 /* NSData+MKBase64.m in Sources */,
+				0157E2A31974C91700BA19D1 /* ScrollTestView.m in Sources */,
 				01ED0CFB196EE2AE00D652B6 /* MKNetworkOperation.m in Sources */,
 				01ED0CF9196EE2AE00D652B6 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				1FF0F9CD167F766000AED782 /* SwipeView.m in Sources */,
