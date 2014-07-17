@@ -96,6 +96,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
         // Custom initialization
+        NSLog(@"这个会执行吗");
     }
     return self;
 }
@@ -111,6 +112,7 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
     UITableView *tableView = (id)[self.view viewWithTag:1];
     tableView.rowHeight = 125;
+    
     UINib *nib = [UINib nibWithNibName:@"CustomCell" bundle:nil];
     
     [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
@@ -135,6 +137,8 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     [self.refresh addTarget:self
                             action:@selector(handleRefresh:)
                   forControlEvents:UIControlEventValueChanged];
+    
+  //  [self.navigationController setToolbarHidden:NO animated:YES];
     
 }
 

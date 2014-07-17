@@ -21,6 +21,7 @@
 		0157E2A71974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A51974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png */; };
 		0157E2AA19750BDD00BA19D1 /* recommond_header_bander_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A819750BDD00BA19D1 /* recommond_header_bander_default.png */; };
 		0157E2AB19750BDD00BA19D1 /* recommand_banner_default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0157E2A919750BDD00BA19D1 /* recommand_banner_default.jpg */; };
+		01CA7A2A19767D1500F8E448 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA7A2919767D1500F8E448 /* AboutMeViewController.m */; };
 		01E0B0E3197376C400105395 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0D3197376C400105395 /* MJRefresh.bundle */; };
 		01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D6197376C400105395 /* MJRefreshBaseView.m */; };
 		01E0B0E5197376C400105395 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D8197376C400105395 /* MJRefreshConst.m */; };
@@ -120,6 +121,8 @@
 		0157E2A51974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mtll_adt_lately_share_page_no_nor.png; sourceTree = "<group>"; };
 		0157E2A819750BDD00BA19D1 /* recommond_header_bander_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommond_header_bander_default.png; sourceTree = "<group>"; };
 		0157E2A919750BDD00BA19D1 /* recommand_banner_default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recommand_banner_default.jpg; sourceTree = "<group>"; };
+		01CA7A2819767D1500F8E448 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		01CA7A2919767D1500F8E448 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		01E0B0D3197376C400105395 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		01E0B0D4197376C400105395 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		01E0B0D5197376C400105395 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -426,6 +429,8 @@
 				1F5BE0DA1647DC0C0004242A /* AppDelegate.h */,
 				1F5BE0DB1647DC0C0004242A /* AppDelegate.m */,
 				1F5BE0E31647DC0C0004242A /* MainStoryboard.storyboard */,
+				01CA7A2819767D1500F8E448 /* AboutMeViewController.h */,
+				01CA7A2919767D1500F8E448 /* AboutMeViewController.m */,
 				01201EF5196FC0C300224EAE /* YahooEngine.h */,
 				01201EFB1971790D00224EAE /* XzxmEngine.h */,
 				01201EFC1971790D00224EAE /* XzxmEngine.m */,
@@ -695,6 +700,7 @@
 				1FF0F9D0167F77DD00AED782 /* RotationView.m in Sources */,
 				1FF0F9D3167F793100AED782 /* LongPressView.m in Sources */,
 				01349CA11972623600B87C97 /* JSONModel.m in Sources */,
+				01CA7A2A19767D1500F8E448 /* AboutMeViewController.m in Sources */,
 				01349CA4197266BA00B87C97 /* UserListItem.m in Sources */,
 				01201EF7196FC0C300224EAE /* YahooEngine.m in Sources */,
 				1FF0F9D7167F7BFB00AED782 /* PinchView.m in Sources */,
