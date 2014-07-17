@@ -14,6 +14,9 @@
 		012ABFD3196AC929005E1121 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012ABFD2196AC929005E1121 /* CustomCell.xib */; };
 		01349CA11972623600B87C97 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01349CA01972623600B87C97 /* JSONModel.m */; };
 		01349CA4197266BA00B87C97 /* UserListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01349CA3197266BA00B87C97 /* UserListItem.m */; };
+		013647921977C3DF00F6ADB3 /* MeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013647911977C3DF00F6ADB3 /* MeContentView.m */; };
+		013647951977C4AD00F6ADB3 /* MeBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013647941977C4AD00F6ADB3 /* MeBarView.m */; };
+		013647981977C56B00F6ADB3 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013647971977C56B00F6ADB3 /* TestViewController.m */; };
 		014D3825196D1F3B006B7FCC /* chat_time_backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */; };
 		014D3827196D2ED2006B7FCC /* desktop_notice_realname.png in Resources */ = {isa = PBXBuildFile; fileRef = 014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */; };
 		0157E2A31974C91700BA19D1 /* ScrollTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0157E2A21974C91700BA19D1 /* ScrollTestView.m */; };
@@ -113,6 +116,12 @@
 		01349CA01972623600B87C97 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
 		01349CA2197266BA00B87C97 /* UserListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListItem.h; sourceTree = "<group>"; };
 		01349CA3197266BA00B87C97 /* UserListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListItem.m; sourceTree = "<group>"; };
+		013647901977C3DF00F6ADB3 /* MeContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeContentView.h; sourceTree = "<group>"; };
+		013647911977C3DF00F6ADB3 /* MeContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeContentView.m; sourceTree = "<group>"; };
+		013647931977C4AD00F6ADB3 /* MeBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeBarView.h; sourceTree = "<group>"; };
+		013647941977C4AD00F6ADB3 /* MeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeBarView.m; sourceTree = "<group>"; };
+		013647961977C56B00F6ADB3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		013647971977C56B00F6ADB3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_time_backgroud.png; sourceTree = "<group>"; };
 		014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop_notice_realname.png; sourceTree = "<group>"; };
 		0157E2A11974C91700BA19D1 /* ScrollTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTestView.h; sourceTree = "<group>"; };
@@ -431,6 +440,12 @@
 				1F5BE0E31647DC0C0004242A /* MainStoryboard.storyboard */,
 				01CA7A2819767D1500F8E448 /* AboutMeViewController.h */,
 				01CA7A2919767D1500F8E448 /* AboutMeViewController.m */,
+				013647961977C56B00F6ADB3 /* TestViewController.h */,
+				013647971977C56B00F6ADB3 /* TestViewController.m */,
+				013647931977C4AD00F6ADB3 /* MeBarView.h */,
+				013647941977C4AD00F6ADB3 /* MeBarView.m */,
+				013647901977C3DF00F6ADB3 /* MeContentView.h */,
+				013647911977C3DF00F6ADB3 /* MeContentView.m */,
 				01201EF5196FC0C300224EAE /* YahooEngine.h */,
 				01201EFB1971790D00224EAE /* XzxmEngine.h */,
 				01201EFC1971790D00224EAE /* XzxmEngine.m */,
@@ -667,6 +682,8 @@
 				1F5BE0E81647DC0C0004242A /* AboutViewController.m in Sources */,
 				01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */,
 				1FEAD1A6164AAF630067FE33 /* Diary.m in Sources */,
+				013647981977C56B00F6ADB3 /* TestViewController.m in Sources */,
+				013647921977C3DF00F6ADB3 /* MeContentView.m in Sources */,
 				1F32FD37164EA400006EC6E7 /* LocationViewController.mm in Sources */,
 				1FCFF7471653C37200821345 /* DiaryListViewController.m in Sources */,
 				01E0B0E8197376C400105395 /* UIScrollView+Extension.m in Sources */,
@@ -697,6 +714,7 @@
 				01ED0CF9196EE2AE00D652B6 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				1FF0F9CD167F766000AED782 /* SwipeView.m in Sources */,
 				01E0B0E6197376C400105395 /* MJRefreshFooterView.m in Sources */,
+				013647951977C4AD00F6ADB3 /* MeBarView.m in Sources */,
 				1FF0F9D0167F77DD00AED782 /* RotationView.m in Sources */,
 				1FF0F9D3167F793100AED782 /* LongPressView.m in Sources */,
 				01349CA11972623600B87C97 /* JSONModel.m in Sources */,
