@@ -17,5 +17,6 @@
 @property (strong, nonatomic) NSArray *cellDataSource;
 
 - (id)initWithFrame:(CGRect)frame Array:(NSArray *)array;
+- (void)selectIndex:(int)index;
 
 @end

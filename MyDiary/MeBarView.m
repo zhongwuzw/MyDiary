@@ -20,6 +20,30 @@
     return self;
 }
 
+- (void)setLineOffsetWithPage:(float)page andRatio:(float)ratio
+{
+    CGRect lineRC  = [self viewWithTag:page + buttonTagStart].frame;
+    
+    CGRect lineRC2  = [self viewWithTag:page + 1 + buttonTagStart].frame;
+    
+    NSLog(@"%f",page + buttonTagStart);
+    
+    float width = lineRC2.size.width;
+    if (lineRC2.size.width < lineRC.size.width)
+    {
+        width =  lineRC.size.width - (lineRC.size.width-lineRC2.size.width)*ratio;
+        
+    }
+    else if(lineRC2.size.width > lineRC.size.width)
+    {
+        width =  lineRC.size.width + (lineRC2.size.width-lineRC.size.width)*ratio;
+    }
+    float x = lineRC.origin.x + (lineRC2.origin.x - lineRC.origin.x)*ratio;
+    
+    
+    self.lineView.frame = CGRectMake(x,  self.frame.size.height - 2,width,   2);
+}
+
 - (id)initWithFrame:(CGRect)frame andItems:(NSArray *)titleArray
 {
     self = [super initWithFrame:frame];

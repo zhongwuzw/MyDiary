@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *titleArray = [NSArray arrayWithObjects:@"轻松一刻",@"头条",@"北京",@"房产",@"移动互联",@"财经",@"科技",@"游戏",@"历史",@"军事",@"大满贯", nil];
+    NSArray *titleArray = [NSArray arrayWithObjects:@"照片",@"资料",@"往来", nil];
     
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
     
@@ -52,6 +52,27 @@
     self.titleArray = titleArray;
     self.title = [_titleArray objectAtIndex:0];
     // Do any additional setup after loading the view.
+}
+
+- (void)barSelectedIndexChanged:(int)newIndex
+{
+    if (newIndex >= 0) {
+        self.currentIndex = newIndex;
+        self.title = [self.titleArray objectAtIndex:newIndex];
+        [self.meContentView selectIndex:newIndex];
+    }
+}
+
+- (void)contentSelectedIndexChanged:(int)newIndex
+{
+    [self.meBarView selectIndex:newIndex];
+}
+
+- (void)scrollOffsetChanged:(CGPoint)offSet
+{
+    int page = (int)offSet.y/320;
+    float radio = (float)((int)offSet.y % 320)/320;
+    [self.meBarView setLineOffsetWithPage:page andRatio:radio];
 }
 
 - (void)didReceiveMemoryWarning {

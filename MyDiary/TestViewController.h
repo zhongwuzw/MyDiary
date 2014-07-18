@@ -10,7 +10,7 @@
 
 @interface TestViewController : UIViewController
 
-@property (weak, nonatomic) NSString *tempTitle;
+@property (strong, nonatomic) NSString *tempTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 
 @end

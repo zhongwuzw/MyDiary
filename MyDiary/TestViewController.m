@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.labelTitle.text = self.tempTitle;
+    
     // Do any additional setup after loading the view.
 }
 

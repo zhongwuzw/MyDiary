@@ -25,5 +25,7 @@
 @property (strong, nonatomic) UIView *lineView;
 
 - (id)initWithFrame:(CGRect)frame andItems:(NSArray *)titleArray;
+- (void)selectIndex:(int)index;
+- (void)setLineOffsetWithPage:(float)page andRatio:(float)ratio;
 
 @end
