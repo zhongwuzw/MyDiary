@@ -186,7 +186,7 @@
             <objects>
                 <viewController id="G75-gV-kVv" customClass="RotationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgh-bp-dQp">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3pl-Iz-AZb">
@@ -202,7 +202,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rII-hQ-ulG">
-                                <rect key="frame" x="20" y="147" width="120" height="120"/>
+                                <rect key="frame" x="20" y="172" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="左">
@@ -214,7 +214,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t4Y-gx-Bca">
-                                <rect key="frame" x="180" y="147" width="120" height="120"/>
+                                <rect key="frame" x="180" y="172" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="右">
@@ -226,7 +226,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cNa-0n-Iyh">
-                                <rect key="frame" x="20" y="279" width="120" height="120"/>
+                                <rect key="frame" x="20" y="328" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="左下">
@@ -238,7 +238,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TO4-Xl-bjB">
-                                <rect key="frame" x="180" y="279" width="120" height="120"/>
+                                <rect key="frame" x="180" y="328" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="右下">
@@ -283,17 +283,9 @@
             <objects>
                 <viewController id="HGe-jc-ial" customClass="TouchRecognizerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CHY-DV-YlW">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" id="5ZD-md-l41">
-                                <rect key="frame" x="-5" y="254" width="320" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="HGe-jc-ial" id="TzJ-Eh-z1G"/>
-                                    <outlet property="delegate" destination="HGe-jc-ial" id="5ZQ-EU-13J"/>
-                                </connections>
-                            </pickerView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="b7E-wO-5q4">
                                 <rect key="frame" x="0.0" y="20" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -302,6 +294,14 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="zh_CN"/>
                             </datePicker>
+                            <pickerView contentMode="scaleToFill" id="5ZD-md-l41">
+                                <rect key="frame" x="13" y="249" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HGe-jc-ial" id="TzJ-Eh-z1G"/>
+                                    <outlet property="delegate" destination="HGe-jc-ial" id="5ZQ-EU-13J"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -332,7 +332,7 @@
         <!--缘分-->
         <scene sceneID="GP2-mr-ey4">
             <objects>
-                <viewController id="13f-V9-cPV" customClass="DiaryListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="diaryListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="13f-V9-cPV" customClass="DiaryListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oh9-P2-5Cs">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -657,8 +657,6 @@
                         <segue destination="hPO-Vo-dE8" kind="relationship" relationship="viewControllers" id="3uS-Oo-0bI"/>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="qeb-SR-YXH"/>
                         <segue destination="bRV-K0-HFe" kind="relationship" relationship="viewControllers" id="3a1-oA-XFn"/>
-                        <segue destination="G75-gV-kVv" kind="relationship" relationship="viewControllers" id="TAe-3h-QmD"/>
-                        <segue destination="HGe-jc-ial" kind="relationship" relationship="viewControllers" id="mcZ-97-SHs"/>
                         <segue destination="8ag-qB-XnY" kind="relationship" relationship="viewControllers" id="bc7-2s-uWJ"/>
                     </connections>
                 </tabBarController>
@@ -673,6 +671,19 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0bF-Us-BJ2">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other_profile_head_bg.png" id="xay-t8-YS0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Td8-lK-UJR">
+                                <rect key="frame" x="133" y="9" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="我" id="vaW-U9-9K2"/>
@@ -680,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEr-r9-5Jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336" y="282"/>
+            <point key="canvasLocation" x="-535" y="162"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="ol7-ZH-sT2">
@@ -713,6 +724,7 @@
         <image name="about.png" width="32" height="32"/>
         <image name="diary.png" width="32" height="32"/>
         <image name="location.png" width="32" height="32"/>
+        <image name="other_profile_head_bg.png" width="480" height="252"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

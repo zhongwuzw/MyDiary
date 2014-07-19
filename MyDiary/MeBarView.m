@@ -61,11 +61,13 @@
             button.tag = buttonTagStart + i;
             CGSize size = [title sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:CGSizeMake(MAXFLOAT, 25) lineBreakMode:NSLineBreakByWordWrapping];
             
-            button.frame = CGRectMake(width, 0, size.width, 25);
+        //    button.frame = CGRectMake(width, 0, size.width, 25);
+            button.frame = CGRectMake(width, 0, 320/3, 25);
             [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:button];
             [self.buttonArray addObject:button];
-            width += size.width + 20;
+          //  width += size.width + 20;
+            width += 320/3 +20;
         }
         
         self.contentSize = CGSizeMake(width, 25);

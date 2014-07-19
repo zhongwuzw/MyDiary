@@ -8,6 +8,7 @@
 
 #import "AboutMeViewController.h"
 #import "TestViewController.h"
+#import "DiaryListViewController.h"
 
 @interface AboutMeViewController ()
 
@@ -23,13 +24,14 @@
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
     
     for (NSString *title in titleArray) {
-        TestViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"test"];
-        vc.tempTitle = [title stringByAppendingString:@" View controller"];
+     //   TestViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"test"];
+        DiaryListViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"diaryListViewController"];
+       // vc.tempTitle = [title stringByAppendingString:@" View controller"];
         
         [controllers addObject:vc];
     }
     
-    int y = 64;
+    int y = 146;
     
     self.meBarView = [[MeBarView alloc] initWithFrame:CGRectMake(0, y, 320, barHeight) andItems:titleArray];
     
