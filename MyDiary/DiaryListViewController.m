@@ -289,6 +289,19 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
  //   cell.color = rowData[@"Color"];
     
+  //  NSLog(@"Cell recursive description:\n\n%@\n\n",[cell performSelector:@selector(recursiveDescription)]);
+    
+//    cell.backgroundColor = [UIColor purpleColor];
+//    cell.contentView.backgroundColor = [UIColor blueColor];
+//    
+//    for (UIView *view in cell.subviews) {
+//        if ([view isKindOfClass:[UIScrollView class]]) {
+//            view.backgroundColor = [UIColor greenColor];
+//        }
+//    }
+    
+    cell.delegate = self;
+    
     return cell;
     // CellIdentifier所指向的字符串必须与故事板中Table View Cell对象的Indentifier属性一致
 //    static NSString *CellIdentifier = @"DiaryCell";
@@ -317,6 +330,21 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
 //    cell.detailTextLabel.text = [[diary dateCreate] description];
 //    
 //    return cell;
+}
+
+- (void)buttonOneActionForItemText:(NSString *)itemText
+{
+    NSLog(@"in the delegate ,clicked button one for %@",itemText);
+}
+
+- (void)buttonTwoActionForItemText:(NSString *)itemText
+{
+    NSLog(@"in the delegate ,clicked button two for %@",itemText);
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NO;
 }
 
 -(void)tableView:(UITableView *)tableView

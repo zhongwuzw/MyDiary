@@ -69,7 +69,7 @@
           //  width += size.width + 20;
             width += 320/3 +20;
         }
-        
+      //  self.contentInset = UIEdgeInsetsMake(20, 20, 20, 20);
         self.contentSize = CGSizeMake(width, 25);
         self.showsHorizontalScrollIndicator = NO;
     

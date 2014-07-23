@@ -17,7 +17,7 @@
     self.yahooEngine = [[YahooEngine alloc] initWithHostName:@"download.finance.yahoo.com"];
     [self.yahooEngine useCache];
     
-    self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost" portNumber:8001 apiPath:nil customHeaderFields:nil];
+    self.xzxmEngine = [[XzxmEngine alloc] initWithHostName:@"localhost" portNumber:8000 apiPath:nil customHeaderFields:nil];
     
  //   [self.xzxmEngine useCache];
     

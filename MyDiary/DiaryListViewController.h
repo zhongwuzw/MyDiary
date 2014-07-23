@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "DetailDiaryViewController.h"
 #import "CreateDiaryViewController.h"
+#import "DiaryListTableViewCell.h"
 #import "XzxmEngine.h"
 #import "ImageStore.h"
 
 @interface DiaryListViewController : UITableViewController
-<UITableViewDataSource, UITableViewDelegate, CreateDiaryViewControllerDelegate>
+<UITableViewDataSource, UITableViewDelegate, CreateDiaryViewControllerDelegate, SwipeableCellDelegate>
 
 @property (nonatomic, strong) NSMutableArray   *diaries;
 @property (nonatomic, strong) UIColor *diaryTitleColor;

@@ -21,8 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
-@property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UITextField *addressField;
+
+@property (strong, nonatomic) MKNetworkOperation *loginOperation;
 
 - (IBAction)createAccount:(id)sender;
 @end

@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol SwipeableCellDelegate
+<NSObject>
+- (void)buttonOneActionForItemText:(NSString *)itemText;
+- (void)buttonTwoActionForItemText:(NSString *)itemText;
+@end
 
 @interface DiaryListTableViewCell : UITableViewCell
 
@@ -17,5 +22,12 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UIImageView *vipImage;
 @property (weak, nonatomic) IBOutlet UILabel *introduce;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIView *myContentView;
+
+@property (nonatomic, weak) id <SwipeableCellDelegate> delegate;
+
+- (IBAction)buttonClicked:(UIButton *)sender;
 
 @end

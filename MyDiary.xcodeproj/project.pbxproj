@@ -27,7 +27,10 @@
 		01691E201978F60A00BEDBB8 /* MeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01691E1F1978F60A00BEDBB8 /* MeHeaderView.m */; };
 		01691E221978F79D00BEDBB8 /* MeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01691E211978F79D00BEDBB8 /* MeHeaderView.xib */; };
 		01691E241978FB2F00BEDBB8 /* other_profile_head_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 01691E231978FB2F00BEDBB8 /* other_profile_head_bg.png */; };
+		01C41D21197D4E1B006F9FF4 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C41D20197D4E1B006F9FF4 /* TestCollectionViewController.m */; };
+		01C41D27197D5CFA006F9FF4 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C41D26197D5CFA006F9FF4 /* TestCollectionViewCell.m */; };
 		01CA7A2A19767D1500F8E448 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA7A2919767D1500F8E448 /* AboutMeViewController.m */; };
+		01D35359197AB722009062E2 /* common_alipay_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D35358197AB722009062E2 /* common_alipay_icon.png */; };
 		01E0B0E3197376C400105395 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01E0B0D3197376C400105395 /* MJRefresh.bundle */; };
 		01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D6197376C400105395 /* MJRefreshBaseView.m */; };
 		01E0B0E5197376C400105395 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0B0D8197376C400105395 /* MJRefreshConst.m */; };
@@ -137,8 +140,13 @@
 		01691E1F1978F60A00BEDBB8 /* MeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeHeaderView.m; sourceTree = "<group>"; };
 		01691E211978F79D00BEDBB8 /* MeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeaderView.xib; sourceTree = "<group>"; };
 		01691E231978FB2F00BEDBB8 /* other_profile_head_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other_profile_head_bg.png; sourceTree = "<group>"; };
+		01C41D1F197D4E1B006F9FF4 /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		01C41D20197D4E1B006F9FF4 /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		01C41D25197D5CFA006F9FF4 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		01C41D26197D5CFA006F9FF4 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
 		01CA7A2819767D1500F8E448 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		01CA7A2919767D1500F8E448 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		01D35358197AB722009062E2 /* common_alipay_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = common_alipay_icon.png; sourceTree = "<group>"; };
 		01E0B0D3197376C400105395 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		01E0B0D4197376C400105395 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		01E0B0D5197376C400105395 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -382,6 +390,7 @@
 				1FB6818616528789008B990F /* lib */,
 				1FB6818B16528789008B990F /* include */,
 				1FC40B131649375500A89649 /* Default@2x.png */,
+				01D35358197AB722009062E2 /* common_alipay_icon.png */,
 				1FC40B11164936E500A89649 /* Default-568h@2x.png */,
 				0157E2A41974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_cur.png */,
 				01691E231978FB2F00BEDBB8 /* other_profile_head_bg.png */,
@@ -446,6 +455,10 @@
 				1F5BE0DA1647DC0C0004242A /* AppDelegate.h */,
 				1F5BE0DB1647DC0C0004242A /* AppDelegate.m */,
 				1F5BE0E31647DC0C0004242A /* MainStoryboard.storyboard */,
+				01C41D25197D5CFA006F9FF4 /* TestCollectionViewCell.h */,
+				01C41D26197D5CFA006F9FF4 /* TestCollectionViewCell.m */,
+				01C41D1F197D4E1B006F9FF4 /* TestCollectionViewController.h */,
+				01C41D20197D4E1B006F9FF4 /* TestCollectionViewController.m */,
 				01691E1E1978F60A00BEDBB8 /* MeHeaderView.h */,
 				01691E1F1978F60A00BEDBB8 /* MeHeaderView.m */,
 				01CA7A2819767D1500F8E448 /* AboutMeViewController.h */,
@@ -620,7 +633,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "刘铭";
+				ORGANIZATIONNAME = "钟武";
 			};
 			buildConfigurationList = 1F5BE0C11647DC0C0004242A /* Build configuration list for PBXProject "MyDiary" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -665,6 +678,7 @@
 				1F2F32C1164DFA5C002646F0 /* diary.png in Resources */,
 				1F2F32C2164DFA5C002646F0 /* location.png in Resources */,
 				1FB681A7165288E1008B990F /* AMap.bundle in Resources */,
+				01D35359197AB722009062E2 /* common_alipay_icon.png in Resources */,
 				0157E2A71974FE6D00BA19D1 /* mtll_adt_lately_share_page_no_nor.png in Resources */,
 				01E0B0EC1973C9FB00105395 /* activity_chat_ding_icon.png in Resources */,
 				01691E241978FB2F00BEDBB8 /* other_profile_head_bg.png in Resources */,
@@ -688,6 +702,7 @@
 			files = (
 				01E0B0EA197376C400105395 /* UIView+Extension.m in Sources */,
 				01ED0CF3196EE2AE00D652B6 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				01C41D27197D5CFA006F9FF4 /* TestCollectionViewCell.m in Sources */,
 				1F5BE0D81647DC0C0004242A /* main.m in Sources */,
 				01691E201978F60A00BEDBB8 /* MeHeaderView.m in Sources */,
 				01ED0CF7196EE2AE00D652B6 /* NSString+MKNetworkKitAdditions.m in Sources */,
@@ -696,6 +711,7 @@
 				1F5BE0E81647DC0C0004242A /* AboutViewController.m in Sources */,
 				01E0B0E4197376C400105395 /* MJRefreshBaseView.m in Sources */,
 				1FEAD1A6164AAF630067FE33 /* Diary.m in Sources */,
+				01C41D21197D4E1B006F9FF4 /* TestCollectionViewController.m in Sources */,
 				013647981977C56B00F6ADB3 /* TestViewController.m in Sources */,
 				013647921977C3DF00F6ADB3 /* MeContentView.m in Sources */,
 				1F32FD37164EA400006EC6E7 /* LocationViewController.mm in Sources */,

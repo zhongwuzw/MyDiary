@@ -72,7 +72,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"我滑动了");
+  //  NSLog(@"我滑动了");
     _pageControl.currentPage = scrollView.contentOffset.x/320;
 
 }

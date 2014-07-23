@@ -15,6 +15,16 @@
 
 @implementation XzxmEngine
 
+- (void)prepareHeaders:(MKNetworkOperation *)operation
+{
+   // self.accessToken = @"zhongwu";
+    if (self.accessToken) {
+        [operation setAuthorizationHeaderValue:self.accessToken forAuthType:@""];
+    }
+    
+    [super prepareHeaders:operation];
+}
+
 - (MKNetworkOperation *)homePageUserList:(NSString *)userTokens completionHandler:(HomeUserListBlock)completion errorHandler:(MKNKErrorBlock)errorBlock
 {
     MKNetworkOperation *op = [self operationWithPath:XZXM_USER_LIST_URL(userTokens) params:nil httpMethod:@"GET"];
@@ -50,6 +60,25 @@
     }];
     
     [self enqueueOperation:op];
+    return op;
+}
+
+- (MKNetworkOperation *)loginWithName:(NSString *)loginName password:(NSString *)password onSucceeded:(VoidBlock)succeedBlock onError:(MKNKErrorBlock)errorBlock
+{
+    MKNetworkOperation *op = [self operationWithPath:LOGIN_URL];
+    
+    [op setUsername:loginName password:password basicAuth:YES];
+    
+    [op addCompletionHandler:^(MKNetworkOperation *completionOperation){
+        NSDictionary *responseDict = [completionOperation responseJSON];
+        self.accessToken = [responseDict objectForKey:@"accessToken"];
+        succeedBlock();
+    }errorHandler:^(MKNetworkOperation *errorOp,NSError *error){
+        errorBlock(error);
+    }];
+    
+    [self enqueueOperation:op];
+    
     return op;
 }
 

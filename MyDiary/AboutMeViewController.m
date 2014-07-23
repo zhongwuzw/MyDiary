@@ -19,19 +19,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController setNavigationBarHidden:YES];
+    
     NSArray *titleArray = [NSArray arrayWithObjects:@"照片",@"资料",@"往来", nil];
     
     NSMutableArray *controllers = [[NSMutableArray alloc] init];
     
     for (NSString *title in titleArray) {
      //   TestViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"test"];
-        DiaryListViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"diaryListViewController"];
+        DiaryListViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"testCollectionViewController"];
        // vc.tempTitle = [title stringByAppendingString:@" View controller"];
         
         [controllers addObject:vc];
     }
     
-    int y = 146;
+    int y = 42;
+    
+//    CGRect bounds = self.view.bounds; 尝试修改bounds来改变视图的显示位置
+//    bounds.origin.x = 0;
+//    bounds.origin.y = 42;
+//    self.view.bounds = bounds;
+    
     
     self.meBarView = [[MeBarView alloc] initWithFrame:CGRectMake(0, y, 320, barHeight) andItems:titleArray];
     

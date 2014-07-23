@@ -7,6 +7,7 @@
 //
 
 #import "ScrollViewController.h"
+#import "AppDelegate.h"
 
 @interface ScrollViewController ()
 
@@ -30,8 +31,6 @@
     
     self.usernameField.delegate = self;
     self.passwordField.delegate = self;
-    self.emailField.delegate = self;
-    self.addressField.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -119,5 +118,11 @@
 }
 
 - (IBAction)createAccount:(id)sender {
+    
+    self.loginOperation = [ApplicationDelegate.xzxmEngine loginWithName:@"zhongwu" password:@"123" onSucceeded:^{
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Success", @"") message:NSLocalizedString(@"Login successful", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"Dismiss", @"") otherButtonTitles: nil] show];
+    }onError:^(NSError *error){
+        DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
+    }];
 }
 @end
