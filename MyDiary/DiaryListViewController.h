@@ -14,18 +14,20 @@
 #import "ImageStore.h"
 
 @interface DiaryListViewController : UITableViewController
-<UITableViewDataSource, UITableViewDelegate, CreateDiaryViewControllerDelegate, SwipeableCellDelegate>
+<UITableViewDataSource, UITableViewDelegate, CreateDiaryViewControllerDelegate, SwipeableCellDelegate, UISearchDisplayDelegate,UISearchBarDelegate>
 
 @property (nonatomic, strong) NSMutableArray   *diaries;
 @property (nonatomic, strong) UIColor *diaryTitleColor;
 @property (nonatomic, weak) UIView *headerView;
 @property (nonatomic, strong) UIRefreshControl *refresh;
 @property (strong, nonatomic) NSMutableArray *computers;
+@property (strong, nonatomic) UISearchDisplayController *sbc;
 
 @property (strong, nonatomic) MKNetworkOperation *userListOperation;
 @property (strong, nonatomic) MKNetworkOperation *userProfileOperation;
 @property (strong, nonatomic) MKNetworkOperation *pullUpUserListOperation;
 @property (strong, nonatomic) MKNetworkOperation *pullDownUserListOperation;
+
 
 - (UIView *) headerView;
 - (void)footerRefreshing;

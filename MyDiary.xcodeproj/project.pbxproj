@@ -64,7 +64,6 @@
 		1F32C90B166CD78C0035AF8A /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C90A166CD78C0035AF8A /* RotationViewController.m */; };
 		1F32C90F166CEE7E0035AF8A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C90E166CEE7E0035AF8A /* TabBarController.m */; };
 		1F32FD33164E40CC006EC6E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F32FD32164E40CC006EC6E7 /* CoreLocation.framework */; };
-		1F32FD37164EA400006EC6E7 /* LocationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F32FD36164EA400006EC6E7 /* LocationViewController.mm */; };
 		1F5BE0CC1647DC0C0004242A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BE0CB1647DC0C0004242A /* UIKit.framework */; };
 		1F5BE0D01647DC0C0004242A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BE0CF1647DC0C0004242A /* CoreGraphics.framework */; };
 		1F5BE0D61647DC0C0004242A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BE0D41647DC0C0004242A /* InfoPlist.strings */; };
@@ -83,8 +82,6 @@
 		1FAB1DAC165790A20087D133 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB1DAB165790A20087D133 /* ImageStore.m */; };
 		1FAD9F1B1659029500379E7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAD9F1A1659029500379E7B /* AVFoundation.framework */; };
 		1FAD9F1F1659113800379E7B /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD9F1E1659113800379E7B /* RecordViewController.m */; };
-		1FB681A316528789008B990F /* libMAMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB6818816528789008B990F /* libMAMapKit.a */; };
-		1FB681A416528789008B990F /* libMAMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB6818A16528789008B990F /* libMAMapKit.a */; };
 		1FB681A7165288E1008B990F /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FB681A6165288E1008B990F /* AMap.bundle */; };
 		1FB681A916528B6A008B990F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB681A816528B6A008B990F /* assets */; };
 		1FB681AB16528CB5008B990F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB681AA16528CB5008B990F /* CoreText.framework */; };
@@ -128,6 +125,7 @@
 		013647941977C4AD00F6ADB3 /* MeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeBarView.m; sourceTree = "<group>"; };
 		013647961977C56B00F6ADB3 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		013647971977C56B00F6ADB3 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		01460B60197FB1DF001C39F2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		014D3824196D1F3B006B7FCC /* chat_time_backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_time_backgroud.png; sourceTree = "<group>"; };
 		014D3826196D2ED2006B7FCC /* desktop_notice_realname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desktop_notice_realname.png; sourceTree = "<group>"; };
 		0157E2A11974C91700BA19D1 /* ScrollTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTestView.h; sourceTree = "<group>"; };
@@ -201,8 +199,6 @@
 		1F32C90D166CEE7E0035AF8A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		1F32C90E166CEE7E0035AF8A /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		1F32FD32164E40CC006EC6E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		1F32FD35164EA400006EC6E7 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		1F32FD36164EA400006EC6E7 /* LocationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LocationViewController.mm; sourceTree = "<group>"; };
 		1F5BE0C71647DC0C0004242A /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BE0CB1647DC0C0004242A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F5BE0CD1647DC0C0004242A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -309,8 +305,6 @@
 				1F32FD33164E40CC006EC6E7 /* CoreLocation.framework in Frameworks */,
 				1F5BE0CC1647DC0C0004242A /* UIKit.framework in Frameworks */,
 				1F5BE0D01647DC0C0004242A /* CoreGraphics.framework in Frameworks */,
-				1FB681A316528789008B990F /* libMAMapKit.a in Frameworks */,
-				1FB681A416528789008B990F /* libMAMapKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +380,7 @@
 		1F5BE0BC1647DC0C0004242A = {
 			isa = PBXGroup;
 			children = (
+				01460B60197FB1DF001C39F2 /* Reveal.framework */,
 				1FB681A6165288E1008B990F /* AMap.bundle */,
 				1FB6818616528789008B990F /* lib */,
 				1FB6818B16528789008B990F /* include */,
@@ -493,8 +488,6 @@
 				1FBBFFFA1656169E001C9E67 /* CameraViewController.m */,
 				1FAD9F1D1659113800379E7B /* RecordViewController.h */,
 				1FAD9F1E1659113800379E7B /* RecordViewController.m */,
-				1F32FD35164EA400006EC6E7 /* LocationViewController.h */,
-				1F32FD36164EA400006EC6E7 /* LocationViewController.mm */,
 				1F5BE0E61647DC0C0004242A /* AboutViewController.h */,
 				1F5BE0E71647DC0C0004242A /* AboutViewController.m */,
 				1F8C1A67166831D700B2063D /* ScrollViewController.h */,
@@ -634,6 +627,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "钟武";
+				TargetAttributes = {
+					1F5BE0C61647DC0C0004242A = {
+						DevelopmentTeam = P6LCGC9VU2;
+					};
+				};
 			};
 			buildConfigurationList = 1F5BE0C11647DC0C0004242A /* Build configuration list for PBXProject "MyDiary" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -714,7 +712,6 @@
 				01C41D21197D4E1B006F9FF4 /* TestCollectionViewController.m in Sources */,
 				013647981977C56B00F6ADB3 /* TestViewController.m in Sources */,
 				013647921977C3DF00F6ADB3 /* MeContentView.m in Sources */,
-				1F32FD37164EA400006EC6E7 /* LocationViewController.mm in Sources */,
 				1FCFF7471653C37200821345 /* DiaryListViewController.m in Sources */,
 				01E0B0E8197376C400105395 /* UIScrollView+Extension.m in Sources */,
 				1F0482461653F21F00799871 /* DetailDiaryViewController.m in Sources */,
@@ -830,9 +827,16 @@
 		1F5BE0EC1647DC0C0004242A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDiary/MyDiary-Prefix.pch";
 				INFOPLIST_FILE = "MyDiary/MyDiary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
@@ -842,7 +846,15 @@
 					"-IMAMapKit",
 					"-all_load",
 				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-framework",
+					Reveal,
+					"-IMAMapKit",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -850,9 +862,16 @@
 		1F5BE0ED1647DC0C0004242A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDiary/MyDiary-Prefix.pch";
 				INFOPLIST_FILE = "MyDiary/MyDiary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
@@ -863,6 +882,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

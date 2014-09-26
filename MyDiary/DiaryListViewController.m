@@ -124,12 +124,24 @@ static NSString *CellTableIdentifier = @"CellTableIdentifier";
         [self.tableView reloadData];
         
     }errorHandler:^(NSError *error){
+        NSLog(@"zhongwu error");
         DLog(@"%@\t%@\t%@\t%@",[error localizedDescription],[error localizedFailureReason],[error localizedRecoveryOptions],[error localizedRecoverySuggestion]);
     }];
     
  //   self.tableView.tableHeaderView = [self headerView];
     ScrollTestView *scrollTestView = [[ScrollTestView alloc] initWithFrame:CGRectMake(0, 0, 320, 80)];
-    self.tableView.tableHeaderView = scrollTestView;
+  //  self.tableView.tableHeaderView = scrollTestView;
+    
+    UISearchBar *b = [[UISearchBar alloc] init];
+    [b sizeToFit];
+    b.delegate = self;
+    [self.tableView setTableHeaderView:b];
+//    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    UISearchDisplayController *c = [[UISearchDisplayController alloc] initWithSearchBar:b contentsController:self];
+    self.sbc = c;
+    c.delegate = self;
+    c.searchResultsDataSource = self;
+    c.searchResultsDelegate = self;
     
     // 创建刷新控件
     self.refresh = [[UIRefreshControl alloc] init];

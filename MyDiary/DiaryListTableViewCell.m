@@ -72,6 +72,12 @@ static CGFloat const kBounceValue = 20.0f;
     }];
 }
 
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    [self resetConstraintContstantsToZero:NO notifyDelegateDidClose:NO];
+}
+
 - (void)setContraintsToShowAllButtons:(BOOL)animated notifyDelegateDidOpen:(BOOL)notifyDelegate
 {
     if (self.startingRightLayoutContraintConstant == [self buttonTotalWidth] && self.contentViewRightContraint.constant == [self buttonTotalWidth]) {
